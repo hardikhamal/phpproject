@@ -1,0 +1,31 @@
+<?php
+$arr=array("Amit","Ramesh","Bivesh","Rita");
+$arr1=array("Ram","Ramesh","Bivesh","Riya");
+$name="Hello please help me";
+$result=array_diff($arr,$arr1);
+print_r($result);
+echo "<br><br>";
+$result1=array_intersect($arr,$arr1);
+print_r($result1);
+echo "<br><br>";
+print_r(array_merge($arr,$arr1));
+echo "<br><br>";
+sort($arr);
+print_r($arr);
+echo "<br><br>";
+rsort($arr1);
+print_r($arr1);
+echo "<br><br>";
+echo count($arr);
+echo "<br><br>";
+echo sizeof($arr);
+echo "<br><br>";
+unset($arr[0]);
+print_r($arr);
+echo "<br><br>";
+$str=implode(",",$arr);
+echo $str;
+echo "<br><br>";
+$ar=explode(" ",$name);
+print_r($ar);
+?>
